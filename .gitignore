@@ -1,0 +1,16 @@
+# keep screenshots folder empty
+screenshots/*
+!screenshots/.gitkeep
+
+# github has 100mb file limit so can't commit the pretrained models
+pretrained_models/*
+!pretrained_models/.gitkeep 
+
+# python venv
+environment
+
+# python binaries
+__pycache__
+
+# MacOS
+.DS_Store
