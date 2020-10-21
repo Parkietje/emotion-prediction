@@ -5,7 +5,7 @@ import uuid
 
 OUTPUT_DIRECTORY = "screenshots"
 
-def screenshot():
+def capture():
     cap = cv2.VideoCapture(0)
     
     # wait until camera is ready
@@ -36,4 +36,4 @@ def _crop_face(img):
         return img[y:y+h, x:x+w]
 
 if __name__ == '__main__':
-    screenshot()
+    capture()

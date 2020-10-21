@@ -27,11 +27,11 @@ Print out the Valence and Arousal values of a given image file
 
 `$ python predict.py path/to/your/image.jpg`
 
-### screenshot.py
+### portrait.py
 
-Create an jpg file of your face cropped from the camera feed in `screenshots/` directory
+Creates a jpg of your face cropped from the camera feed and put it in `screenshots/` directory
 
-`$ python screenshot.py`
+`$ python portrait.py`
 
 ### server.py
 

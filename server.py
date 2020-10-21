@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler
 import socketserver
 import re
 import predict
-import screenshot
+import portrait
 import json
 
 PORT = 9090
@@ -30,12 +30,12 @@ class CustomHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(response, indent=2).encode('utf-8'))
             return
         
-        # return prediction from screenshot
+        # return prediction from portrait
         if None != re.search('/screenshot', self.path):
             self._set_headers()
             
-            # get prediction from screenshot
-            valence, arousal = predict.predict(screenshot.screenshot())
+            # get prediction from portrait
+            valence, arousal = predict.predict(portrait.capture())
             
             # make response object
             response = {'valence': valence, 'arousal':arousal}
