@@ -7,7 +7,7 @@ This repository contains the [code](https://github.com/dkollias/Aff-Wild-models)
 
 1) create a virtual python 3.6 environment and activate it
 
-2) copy link for your python/OS version from [here](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow) and append next line to `requirements.txt`:
+2) copy link for your python/OS version from [here](https://pypi.org/project/tensorflow/1.8.0/#files) and append next line to `requirements.txt`:
 
 `tensorflow @ http://WHEEL_LOCATION_THAT_YOU_COPIED` 
 
