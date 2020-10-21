@@ -5,11 +5,17 @@ This repository contains the [code](https://github.com/dkollias/Aff-Wild-models)
 
 ## Dependencies
 
-The project uses tensorflow 1.8 and python 3.6.10 (see `requirements.txt`). You should create a virtual python 3.6.10 environment and THEN you can build tensorflow 1.8 from source (see most upvoted answer [here](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow))
+1) create a virtual python 3.6 environment and activate it
 
-## Downloading the pretrained model
+2) copy link for your python/OS version from [here](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow) and append next line to `requirements.txt`:
 
-You can download the pretrained model [here](https://drive.google.com/drive/folders/1yvmRAJT21S33-fNuh6tt8yKdrCp6gHas) and store the unzipped folder in `pretrained_models/`
+`tensorflow @ http://WHEEL_LOCATION_THAT_YOU_COPIED` 
+
+3) install dependencies:
+
+`$  pip install -r requirements.txt`
+
+4) download the pretrained model [here](https://drive.google.com/drive/folders/1yvmRAJT21S33-fNuh6tt8yKdrCp6gHas) and store the unzipped folder in `pretrained_models/`
 
 ## Running the scripts
 

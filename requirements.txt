@@ -19,7 +19,6 @@ protobuf==3.13.0
 regex==2020.10.11
 six==1.15.0
 tensorboard==1.8.0
-tensorflow @ https://files.pythonhosted.org/packages/03/ad/d732a5d9d50bfcd8aeb6e4a266065a8868829388e4e2b529ff689f1fc923/tensorflow-1.8.0-cp36-cp36m-macosx_10_11_x86_64.whl
 termcolor==1.1.0
 toml==0.10.1
 typed-ast==1.4.1
