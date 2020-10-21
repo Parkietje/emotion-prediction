@@ -16,6 +16,8 @@ def capture():
     
     # crop face
     frame = _crop_face(frame)
+    if frame is None:
+        raise Exception('No face found')
 
     # write to file
     id = uuid.uuid1()
