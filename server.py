@@ -57,7 +57,7 @@ class CustomHandler(BaseHTTPRequestHandler):
             self._set_headers()
             # parse train label
             label = str(self.path.split('/train/')[-1])
-            EMOTIONS = {-2: 'angry', -1: 'annoyed', 0: 'neutral', 1: 'content', 2: 'joyful'}
+            EMOTIONS = {0: 'angry', 1: 'happy'}
             if not label in EMOTIONS.values():
                 response = {'error': 'label not recognized'+label}
                 self.wfile.write(json.dumps(response, indent=2).encode('utf-8'))
